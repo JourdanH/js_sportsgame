@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Game Challenge</title>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
+  <audio id="smack">
+    <source src="assets/sounds/smack.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="resetnoise">
+    <source src="assets/sounds/reset.mp3" type="audio/mpeg">
+  </audio>
+
+
+</head>
+<body>
+  <div id="container">
+    <div style="width: 700px;margin: 0 auto;">
+    <div class="game">
+      <div class="title">
+        <h1>Hockey, JavaScript, and the DOM oh My!</h1>
+        <h2 style="margin-top: 0">...the game!</h2>
+      </div>
+      <div style="margin: 0 auto;text-align:center">
+        <button id="reset">RESET</button><br>
+        <p>NUMBER OF RESETS: <span id="num-resets">0</span></p>
+      </div>
+      <div class="clear"></div>
+      <div class="left">
+        <h2 id="team1">
+          Team 1
+        </h2>
+        <div class="hits">
+          <p>SHOTS TAKEN: <span id="teamone-numshots">0</span></p>
+          <p>GOALS: <span id="teamone-numhits">0</span></p>
+        </div>
+        <div>
+          <button id="teamone-shoot">SHOOT</button>
+        </div>
+      </div>
+      <div class="right">
+        <h2 id= "team2">
+          Team 2
+        </h2>
+        <div class="hits">
+          <p>SHOTS TAKEN: <span id="teamtwo-numshots">0</span></p>
+          <p>GOALS: <span id="teamtwo-numhits">0</span></P>
+        </div>
+        <div>
+          <button id="teamtwo-shoot">SHOOT</button>
+        </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <script type="text/javascript" src="assets/javascripts/game.js"></script>
+</body>
+</html>

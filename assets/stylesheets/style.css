@@ -1,0 +1,103 @@
+body {
+  background-color: black;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 4px 4px 8px #446CB3;
+  font-size: 50px;
+}
+
+h2 {
+
+  font-size: 26px;
+  text-align: center;
+
+}
+
+p {
+  font-size: 24px;
+}
+
+button {
+  background-color: #446CB3;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px black;
+  padding: 0 2em;
+  outline:none;
+}
+
+button:hover {
+  background-color: #52B3D9;
+}
+
+button:active {
+  background-color: #52B3D9;
+}
+.title {
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  margin: 5px 0;
+  padding: 0;
+  box-shadow: 0 2px 2px -2px black;
+
+}
+.game {
+  text-shadow: 2px 2px black;
+
+}
+.hide {
+  display: none;
+}
+.left {
+  background: rgba(108, 122, 137, 0.8);
+  border-radius: 5px;
+  padding: 0 20px 20px 20px;
+  float: left;
+  text-align: center;
+  box-shadow: 2px 2px gray;
+}
+.left h2 {
+  color: red;
+  text-shadow: 2px 2px white;
+  border-bottom: 4px solid red;
+  box-shadow: 0 2px 2px -2px white;
+}
+.right {
+  background: rgba(108, 122, 137, 0.8);
+  border-radius: 5px;
+  padding: 0 20px 20px 20px;
+  float: right;
+  text-align: center;
+  box-shadow: 2px 2px gray;
+}
+.right h2 {
+  border-bottom: 4px solid blue;
+  box-shadow: 0 2px 2px -2px white;
+  color:  blue;
+  text-shadow: 2px 2px white;;
+}
+.clear {
+  clear: both;
+}
+
+#container {
+  background-image: url("../images/13.jpg");
+  background-position: right top;
+  width: 95%;
+  padding: 10px;
+  margin: 0 auto;
+  height: 600px;
+
+}
+
+@media screen and (max-width: 800px){
+  .right, .left {
+  float: none;
+  }
+}
