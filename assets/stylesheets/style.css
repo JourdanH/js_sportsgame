@@ -9,6 +9,7 @@ h1 {
   text-align: center;
   text-shadow: 4px 4px 8px #446CB3;
   font-size: 50px;
+  text-transform: uppercase;
 }
 
 h2 {

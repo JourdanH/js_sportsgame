@@ -13,7 +13,7 @@
 
   if (name2 !=null){
   team2.innerText = name2;}
-  else {team2.innerText="Team 2";
+  else {team2.innerText="Team 2"
     name2 = "Team 2"
   };
 
@@ -65,9 +65,13 @@
   });
   reset.addEventListener("click",function(){
 
-    resetCount.innerHTML = parseInt(resetCount.innerHTML)+1;
     resetNoise.play();
+    resetCount.innerHTML = parseInt(resetCount.innerHTML)+1;
 
+
+
+    setInterval(resetPoints(), 1000);
+    function resetPoints(){
      if (oneGoal.innerHTML>twoGoal.innerHTML){
        alert(name1 + " won!");
      }
@@ -83,6 +87,7 @@
       oneGoal.innerHTML = 0;
       twoShot.innerHTML = 0;
       twoGoal.innerHTML = 0;
+    };
     });
 
 
