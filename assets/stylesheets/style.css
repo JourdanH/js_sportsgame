@@ -55,6 +55,11 @@ button:active {
 .hide {
   display: none;
 }
+
+.resetarea {
+  text-align: center;
+  margin: 0, auto;
+}
 .left {
   background: rgba(108, 122, 137, 0.8);
   border-radius: 5px;
@@ -101,4 +106,46 @@ button:active {
   .right, .left {
   float: none;
   }
+
+  #container {
+    height: auto;
+    align-items: center;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .right, .left {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+}
+
+
+@media screen and (max-width: 600px){
+  h1, h2 {
+    font-size: 1em;
+  }
+.title {
+  width: 100%;
+
+}
+.right, .left {
+  width: 80%;
+  margin-top: 10px;
+  }
+p {
+  font-size: 0.7em;
+  }
+  .center {
+    flex-direction: column;
+  }
+
 }
